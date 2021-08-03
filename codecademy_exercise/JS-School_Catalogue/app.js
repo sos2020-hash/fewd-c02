@@ -1,5 +1,5 @@
 class School {
-    contructor(name, level, numberOfStudents) {
+    constructor(name, level, numberOfStudents) {
         this._name = name;
         this._level = level;
         this._numberOfStudents = numberOfStudents;
@@ -49,19 +49,19 @@ const lorraineHansbury = new PrimarySchool('Lorraine Hansbury', 514, 'Students m
 
 lorraineHansbury.quickFacts();
 
-  // class HighSchool extends School {
-  //   constructor(name, numberOfStudents, sportsTeams) {
-  //     super(name, 'high', numberOfStudents);
-  //     this._sportsTeams = sportsTeams;
-  //   }
+  class HighSchool extends School {
+    constructor(name, numberOfStudents, sportsTeams) {
+      super(name, 'high', numberOfStudents);
+      this._sportsTeams = sportsTeams;
+    }
 
-  //   get sportsTeams() {
-  //     return console.log(this._sportsTeams);
-  //   }
-  // };
+    get sportsTeams() {
+      return console.log(this._sportsTeams);
+    }
+  };
 
-  // School.pickSubstituteTeacher(['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli']);
+  School.pickSubstituteTeacher(['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli']);
 
-  // const alSmith = new HighSchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+  const alSmith = new HighSchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
 
-  // alSmith.sportsTeams;
+  alSmith.sportsTeams;
